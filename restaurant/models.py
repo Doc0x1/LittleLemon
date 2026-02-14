@@ -20,7 +20,7 @@ class Menu(models.Model):
     inventory = models.SmallIntegerField()
 
     def __str__(self):
-        return self.title
+        return f'{self.title} : {str(self.price)}'
     
     class Meta:
         db_table = 'menu_item'
